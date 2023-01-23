@@ -1,6 +1,8 @@
 ## Machine Learning and Physics, Sheet 11 
 
 ### Setup
+Disclaimer: This is currently not working for me, I will figure it out tomorrow and update the environment setup. You can do task one with the previous environment
+
 For this sheet we set up a new conda environment, that includes https://github.com/hci-unihd/celltype-graph-benchmark.
 
 Clone this repo and navigate into it:
@@ -10,7 +12,7 @@ cd mlph_sheet11
 ```
 Install and activate the conda environment:
 ```bash
-conda create -n ctg -c rusty1s -c pytorch -c conda-forge -c lcerrone ctg-benchmark torchvision=0.8.0 jupyter matplotlib
+conda create -n ctg -c rusty1s -c pytorch -c conda-forge -c lcerrone ctg-benchmark torchmetrics=0.8.0 cpuonly jupyter matplotlib
 conda activate ctg
 ```
 Then you can start jupyter (run `jupyter notebook`) and open sheet11.ipynb, 
